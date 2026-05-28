@@ -240,10 +240,30 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.hero-logo-img {
-  max-width: 220px;
-  height: auto;
-  object-fit: contain;
+.hero-text-logo {
+  font-family: var(--font-title);
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #0f172a;
+  letter-spacing: -0.03em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.hero-text-logo i {
+  color: var(--primary-blue);
+  font-size: 1.65rem;
+}
+
+@media (max-width: 768px) {
+  .hero-text-logo {
+    font-size: 1.25rem;
+  }
+  .hero-text-logo i {
+    font-size: 1.35rem;
+  }
 }
 
 .hero-title {
